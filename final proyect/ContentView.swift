@@ -70,7 +70,7 @@ struct ContentView: View {
                                 .position(x:0, y:55)
                                 .shadow(radius: 5)
                         
-                            NavigationLink(destination: advanced())
+                            NavigationLink(destination:advanced())
                               {
                                     Text("advanced")
                                         .font(.title3)

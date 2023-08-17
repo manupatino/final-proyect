@@ -18,16 +18,16 @@ struct intermediate: View {
                 .ignoresSafeArea()
         
             VStack {
-                Text("Intermediate Question. What is your grade level")
+                Text("1. Which of the following is not the application of stack?")
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                    .padding(.top)
+                    .padding([.top, .leading, .trailing])
                 
             
                 VStack(spacing: 20) {
-                    Button("I'm a junior in college") {
-                        answer = "True"
+                    Button(" Data Transfer between two asynchronous process") {
+                        answer = "✅"
                     }
                     .font(.title3)
                     .fontWeight(.medium)
@@ -42,8 +42,8 @@ struct intermediate: View {
                     .shadow(radius: 5)
                     
                     
-                    Button("I'm a freshman in high school") {
-                        answer = "False"
+                    Button(" Compiler Syntax Analyzer") {
+                        answer = "❌"
                     }
                     .font(.title3)
                     .fontWeight(.medium)
@@ -58,8 +58,8 @@ struct intermediate: View {
                    // .position(x:-6, y:55)
                     .shadow(radius: 5)
                     
-                    Button("I'm in junior year of high school") {
-                        answer = "False"
+                    Button(" Tracking of local variables at run time") {
+                        answer = "❌"
                     }
                     .font(.title3)
                     .fontWeight(.medium)

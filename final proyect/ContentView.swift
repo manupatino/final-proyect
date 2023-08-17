@@ -37,63 +37,43 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .padding()
-                        .position(x:199, y:270)
+    
                     
-                    NavigationLink(destination: BeginnerView()) {
-                
-                        Text("beginner")
+                        NavigationLink(destination: BeginnerView()) {
+                        Text("beginner") }
                             .font(.title3)
                             .fontWeight(.medium)
                             .foregroundColor(Color.black)
-                        
-                        
-                            .position(x:100, y:23)
+                    
                             .frame(width: 200, height: 45)
                             .background( Color(hue: 0.89, saturation: 0.45, brightness: 1.0))
                             .cornerRadius(20)
                             .padding(.top)
-                            .position(x:199, y:-40)
                             .shadow(radius: 5)
-                    
+                  
                         NavigationLink(destination: intermediate()) {
-                            Text("intermediate")
+                            Text("intermediate") }
                                 .font(.title3)
                                 .fontWeight(.medium)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                
-                                .position(x:100, y:23)
                                 .frame(width: 200, height: 45)
                                 .background( Color(hue: 0.89, saturation: 0.45, brightness: 1.0))
                                 .cornerRadius(20)
                                 .padding(.top)
-                                .position(x:0, y:55)
                                 .shadow(radius: 5)
                         
-                            NavigationLink(destination:advanced())
-                              {
-                                    Text("advanced")
-                                        .font(.title3)
-                                        .fontWeight(.medium)
-                                        .foregroundColor(Color.black)
-                                        .multilineTextAlignment(.center)
-                                        .position(x:100, y:23)
-                                        .frame(width: 200, height: 45)
-                                        .background( Color(hue: 0.89, saturation: 0.45, brightness: 1.0))
-                                    
-                                        .cornerRadius(20)
-                                        .padding(.top)
-                                        .position(x:-100, y:150)
-                                        .shadow(radius: 5)
-                                
-                                    
-                                    
-                                    
-                                }
-                            }
-                            
-                        }
-                        
+                        NavigationLink(destination:advanced()) {
+                            Text("advanced") }
+                                .font(.title3)
+                                .fontWeight(.medium)
+                                .foregroundColor(Color.black)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 200, height: 45)
+                                .background( Color(hue: 0.89, saturation: 0.45, brightness: 1.0))
+                                .cornerRadius(20)
+                                .padding(.top)
+                                .shadow(radius: 5)
                     }
                 }
             }
